@@ -2,6 +2,10 @@ a {
   color: black;
 }
 
+p {
+  display: block;
+}
+
 div {
   border: 1px solid;
 }
@@ -41,21 +45,46 @@ div {
 }
 
 /* Main Content Styles */
-.maincontent_container {
+.maincontentContainer {
   display: flex;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
 }
 
 .column.large {
-  display: flex;
-  width: 630px;
+  min-width: 630px;
 }
 
 .column.medium {
-  display: flex;
-  width: 300px;
+  min-width: 300px;
 }
 
 .column.small {
+  min-width: 240px;
+}
+
+.headlineStory {
   display: flex;
-  width: 240px;
+}
+
+.headlineStoryNarrative {
+  font-size: 40px;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+}
+
+.narrative {
+  font-size: 17px;
+}
+
+.newsBiteImage {
+  display: flex;
 }
