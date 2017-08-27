@@ -68,23 +68,47 @@ div {
   min-width: 240px;
 }
 
-.headlineStory {
-  display: flex;
-}
-
-.headlineStoryNarrative {
-  font-size: 40px;
-}
-
 .story {
   display: flex;
   flex-direction: column;
 }
 
+.storyImage {
+  display: flex;
+  height: 300px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.storyImage.main {
+  font-size: 40px;
+}
+
 .narrative {
+  font-family: Georgia;
   font-size: 17px;
+  color: black;
 }
 
 .newsBiteImage {
   display: flex;
+}
+
+/* Images for Stories */
+#mainStory {
+  background-image: url("../../resources/images/img-story-main.png");
+}
+
+#earthSpinStory {
+  background-image: url("../../resources/images/img-story-2.png");
+}
+
+#cameraMemoryStory {
+  background-image: url("../../resources/images/img-story-3.png");
+}
+
+#catControlStory {
+  background-image: url("../../resources/images/img-story-1.png");
 }
