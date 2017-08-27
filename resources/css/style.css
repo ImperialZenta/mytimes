@@ -7,7 +7,7 @@ p {
 }
 
 div {
-  border: 1px solid;
+  display: block;
 }
 
 /* Header Bar Styles*/
@@ -47,43 +47,55 @@ div {
 /* Main Content Styles */
 .maincontentContainer {
   display: flex;
-  width: 100%;
 }
 
 .column {
   display: flex;
-  flex-direction: column;
   margin-right: 32px;
+  flex-direction: column;
 }
 
 .column.large {
-  min-width: 630px;
+  width: 630px;
 }
 
 .column.medium {
-  min-width: 300px;
+  width: 300px;
 }
 
 .column.small {
-  min-width: 240px;
+  width: 240px;
+}
+
+.storyBoard {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.storyBoard.column {
+  flex-direction: column;
 }
 
 .story {
   display: flex;
   flex-direction: column;
+  width: 300px;
 }
 
-.storyImage {
-  display: flex;
+.story.image {
   height: 300px;
   font-family: Georgia;
   font-weight: bold;
   font-size: 30px;
+  text-align: center;
   color: white;
 }
 
-.storyImage.main {
+.story.image.main {
+  width: 630px;
   font-size: 40px;
+  text-align: left;
 }
 
 .narrative {
@@ -92,7 +104,63 @@ div {
   color: black;
 }
 
-.newsBiteImage {
+/* News Bites Section */
+.newsBites {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.newsBites h3 {
+  margin: 20px 20px;
+  text-align: center;
+}
+
+.newsBites.bite {
+  display: block;
+  background-color: whitesmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: dimgray;
+  padding: 10px 20px;
+  border-bottom: 1px solid black;
+}
+
+/* Footer Section */
+
+footer {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: mediumaquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+}
+
+footer span {
+  display: inline-block;
+  padding: 10px 15px;
+}
+
+footer .title {
+  display: flex;
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 5px;
+  border-right: 2px solid white;
+}
+
+footer .navigation {
+  display: flex;
+  align-items: center;
+}
+
+footer .copyright {
   display: flex;
 }
 
